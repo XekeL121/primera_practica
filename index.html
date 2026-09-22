@@ -1,48 +1,50 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pinterest HTML</title>
-    <meta name="description" content="Ejercicio de HTML y CSS para crear una página web similar a Pinterest." />
-    <meta name="keywords" content="Pinterest, Ejercicio HTML, Práctica frontend"/>
-    <link rel="canonical" href="https://github.com/XekeL121/primera_practica"/>
-  </head>
-  <header>
-    <div id="Menu principal">
-      <div id="logo"></div>
-      <div id="inicio"></div>
-      <div id="explorar"></div>
-      <div id="crear"></div>
-      <div id="buscador"></div>
-      <div id="campanita"></div>
-      <div id="mensajes"></div>
-      <button id="perfil">
-        <ul>
-          <li id="perfil"></li>
-          <li id="flecha-abajo"></li>
-        </ul>
-      </button>
-    </div>
-  </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descripción de Pinterest...">
+    <meta name="keywords" content="pinterest, imágenes, compartir, tableros">
+    <title>Pinterest</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="canonical" href="https://pinterest.es/">
+</head>
   <body>
-    <div id="escaparate">
-      <article></article>
-      <article></article>
-      <article></article>
-      <article></article>
-      <article></article>
-      <article></article>
-      <article></article>
-      <article></article>
-      <article></article>
-      <article></article>
-      <article></article>
-      <article></article>
-      <article></article>
-      <article></article>
-    </div>
-    <div id="espacio-lateral-drch"></div>
-  </body>
-  <footer></footer>
+    <header>
+        <nav>
+            <a href="/" class="logo">Pinterest</a>
+            <ul>
+                <li><a href="/explorar">Explorar</a></li>
+                <li><a href="/mis-tableros">Mis Tableros</a></li>
+                <li><a href="/subir-imagen">Subir Imagen</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="destacados">
+            <h1>Imágenes Destacadas</h1>
+            <article>
+                <a href="/imagen/123">
+                    <img src="imagen1.jpg" alt="Descripción breve de la imagen" loading="lazy">
+                    <h2>Título de la imagen</h2>
+                </a>
+                <p>Descripción de la imagen. Esta descripción ayuda al SEO y a la accesibilidad.</p>
+            </article>
+            <!-- Repite el bloque <article> para más imágenes -->
+        </section>
+        <section id="categorias">
+            <h1>Categorías Populares</h1>
+            <ul>
+                <li><a href="/categoria/viajes">Viajes</a></li>
+                <li><a href="/categoria/comida">Comida</a></li>
+                <!-- Más categorías -->
+            </ul>
+        </section>
+    </main>
+  <footer>
+    <p>&copy; 2023 Pinterest. Todos los derechos reservados.</p>
+</footer>
+
+<script src="scripts.js"></script>
+</body>
 </html>
