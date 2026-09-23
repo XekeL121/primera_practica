@@ -1,0 +1,53 @@
+body {
+    background-color: black;
+    margin: 0;
+    min-height: 100vh;
+}
+
+h1, h2, h3, li, p {
+    color: rgb(11, 184, 63);
+}
+
+header, footer,   section, article, aside, .sidebar {
+    border-color: green;
+    border-width: 2px;
+    border-style: solid;
+}
+
+header {
+    postion: relative;
+    top: 0;
+    left: 0;
+    padding-left: 10px;  
+    margin-bottom: 10px;
+}
+
+.content {
+    padding: 10px;
+}
+
+.sidebar {
+    max-width: 150px;
+    margin-right: 0px;
+    margin-left: auto;
+    text-align: center;
+}
+
+.sidebar ul {
+    text-align: left;    
+}
+
+.features {
+    text-align: center;
+    padding: 10px;
+}
+
+.feature {
+    padding: none;
+    margin: none;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+}
