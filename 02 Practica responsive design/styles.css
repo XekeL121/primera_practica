@@ -2,6 +2,7 @@ body {
     background-color: black;
     margin: 0;
     min-height: 100vh;
+    min-width: 100vw;
     font-family: Arial, sans-serif;
 }
 
@@ -16,7 +17,8 @@ header, footer,   section, article, aside, .sidebar {
 }
 
 header {
-    postion: relative;
+    position: sticky;
+    background-color: black;
     top: 0;
     left: 0;
     padding-left: 10px;  

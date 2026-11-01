@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+}
+
+/* Menu Styles */
+nav {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+}
+
+nav > img {
+    max-width: 30px;
+    margin-left: 30px;
+}
+
+nav > ul {
+    display: flex;
+    gap: 30px;
+    margin: 0 0 0 30px;
+    padding: 0 8;
+    list-style: none;
+    font: 12px 'Rubik', sans-serif;
+}
+
+#account {
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+}
+
+#account button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+#menu-mobile {
+    display: none;
+}
+
+/* Responsive */
+@media (max-width: 540px) {
+    nav > ul {
+        display: none;
+    }
+    #menu-mobile {
+        display: block;
+    }
+}
+
+
+
+/* Hero Styles */
+#hero {
+    height: 70vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    padding-left: 10%;
+    padding-top: 8%;
+    color: white;
+    margin-bottom: 20px;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 15px;
+}
+
+#hero p {
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+
+
+/* Gallery Styles */
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;                             
+    width: 100%;
+    padding: 5%;
+}
+
+.gallery > article {
+    min-width: 45%;
+    min-height: 45%;
+    background-color: #cfcfcf;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#marco-tarjeta {
+    /* background-color: #745d5d; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+#tittle-card {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.5rem;
+    padding: 0;
+    align-items: start;
+    width: 100%;
+    margin: 0;
+}
+
+#tittle-card > p {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.2rem;
+}
+
+#foot-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    }
+
+#palete {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+}
+
+/* Estilo base para todos los hijos */
+#palete li {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #fcfbfb;
+    cursor: pointer;
+    user-select: none;
+    box-sizing: border-box;
+    
+}
+
+#palete li.selected {
+    width: 35px;
+    height: 35px;
+    border: 5px solid #cfcfcf;
+    box-shadow: 0 0 0 1px #000000;
+}
+
+
+/* Lis */
+#palete li:nth-child(1) {
+    background-color: #c5bbbb; /* Rojo anaranjado */
+}
+
+#palete li:nth-child(2) {
+    background-color: #e90f0f; /* Verde lima */
+    
+}
+
+#palete li:nth-child(3) {
+    background-color: #2745cc; /* Azul real */
+    
+}
+
+#palete li:nth-child(4) {
+    background-color: #020001; /* Rosa fucsia */
+   
+}
+
+
+
+/* Hybrid */
+
+#hybrid #palete li:nth-child(1) {
+    background-color: #000000; /* Rojo anaranjado */
+}
+
+#hybrid #palete li:nth-child(2) {
+    background-color: #fceb08; /* Verde lima */
+    
+}
+
+#hybrid #palete li:nth-child(3) {
+    background-color: #f50b0b; /* Azul real */
+    
+}
+
+#hybrid #palete li:nth-child(4) {
+    background-color: #020001; /* Rosa fucsia */
+   
+}
+
+
+/* Hybrid2 */
+
+#hybrid2 #palete li:nth-child(1) {
+    background-color: #000000; /* Rojo anaranjado */
+}
+
+#hybrid2 #palete li:nth-child(2) {
+    background-color: #2745cc; /* Verde lima */
+    
+}
+
+#hybrid2 #palete li:nth-child(3) {
+    background-color: #f50b0b; /* Azul real */
+    
+}
+
+#hybrid2 #palete li:nth-child(4) {
+    background-color: #020001; /* Rosa fucsia */
+   
+}
+
+
+/* electric2 */
+
+#electric2 #palete li:nth-child(1) {
+    background-color: #000000; /* Rojo anaranjado */
+}
+
+#electric2 #palete li:nth-child(2) {
+    background-color: #fceb08; /* Verde lima */
+    
+}
+
+#electric2 #palete li:nth-child(3) {
+    background-color: #f50b0b; /* Azul real */
+    
+}
+
+#electric2 #palete li:nth-child(4) {
+    background-color: #020001; /* Rosa fucsia */
+   
+}
+
+#more-info {    
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fdfdfd;
+    width: 120px;
+    height: 30px;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 20px;
+    border-radius: 50px;
+    cursor: pointer;  
+}
+
+
